@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        height: 100vh;
+      }
+
+      .grid {
+        background-color: #ddd;
+        width: 940px;
+        padding: 20px;
+        gap: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: fit-content;
+      }
+
+      .grid div,
+      .grid aside {
+        padding: 10px;
+        background: #fff;
+        border-bottom: 4px solid lightsalmon;
+      }
+      .grid aside:first-of-type {
+        grid-area: 1 / 4 / span 3;
+        padding: 10px;
+      }
+
+      .grid aside:last-of-type {
+        grid-row: 2 / span 2;
+      }
+
+      .grid div:first-child {
+        grid-column: 1 / span 2;
+      }
+      .grid div:nth-child(5),
+      .grid div:nth-child(6) {
+        grid-column: 2 / span 2;
+      }
+
+      .grid .black {
+        background: #000;
+        color: #fff;
+      }
+    </style>
+    <title>practice with elzero</title>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="span2">
+        <h2>Osama Mohamed</h2>
+        <p>full stack developer</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+          fuga veniam laborum quae at magni iusto beatae rerum modi. Dolorum
+          minus deserunt excepturi blanditiis tempora illum rem molestias quia
+          nam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+          fuga veniam laborum quae at magni iusto beatae rerum modi. Dolorum
+          minus deserunt excepturi blanditiis tempora illum rem molestias quia
+          nam.
+        </p>
+      </div>
+
+      <div>
+        <h2>Ahmed Elsayed</h2>
+        <p>IOS Developer</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          expedita placeat doloribus! Deleniti
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          expedita placeat doloribus! Deleniti
+        </p>
+      </div>
+
+      <aside class="black">
+        <h2>Shady Nabil</h2>
+        <p>full stack developer</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam,
+          voluptate delectus. Consequatur sit quaerat accusantium, ullam sequi
+          deleniti, pariatur soluta amet repellat debitis excepturi dolor
+          impedit nesciunt consequuntur ipsa odit.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam,
+          voluptate delectus. Consequatur sit quaerat accusantium, ullam sequi
+          deleniti, pariatur soluta amet repellat debitis excepturi dolor
+          impedit nesciunt consequuntur ipsa odit Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Quia, alias dolores quaerat laudantium
+          sapiente perferendis dicta est nostrum odio quo esse asperiores? Atque
+          dolor odio ipsa alias id commodi magni.
+        </p>
+      </aside>
+
+      <aside>
+        <h2>Mohamed Ibrahim</h2>
+        <p>.Net developer</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore
+          sit ipsam aliquam officia optio officiis excepturi rem ad fugit illum,
+          quo porro quam, assumenda obcaecati repellat. Qui, alias officiis!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          sapiente consequuntur doloremque voluptates repellat distinctio
+          laboriosam architecto ducimus veniam repellendus vero numquam,
+          veritatis, dignissimos sint, eligendi ex autem corrupti nisi. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          necessitatibus voluptatibus dolorem laboriosam temporibus ipsa,
+        </p>
+      </aside>
+
+      <div class="black span2">
+        <h2>Osama Mohamed</h2>
+        <p>full stack developer</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+          fuga veniam laborum quae at magni iusto beatae rerum modi. Dolorum
+          minus deserunt excepturi blanditiis tempora illum rem molestias quia
+          nam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+          fuga veniam laborum quae at magni iusto beatae rerum modi. Dolorum
+          minus deserunt excepturi blanditiis tempora illum rem molestias quia
+          nam.
+        </p>
+      </div>
+
+      <div class="span2">
+        <h2>Ezz Eldien</h2>
+        <p>frontend developer</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+          fuga veniam laborum quae at magni iusto beatae rerum modi. Dolorum
+          minus deserunt excepturi blanditiis tempora illum rem molestias quia
+          nam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+          fuga veniam laborum quae at magni iusto beatae rerum modi. Dolorum
+          minus deserunt excepturi blanditiis tempora illum rem molestias quia
+          nam. deleniti soluta esse. Doloribus reprehenderit neque impedit
+          obcaecati totam unde quasi provident adipisci ipsam qui. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Beatae accusamus
+          doloremque tempore deleniti soluta esse. Doloribus reprehenderit neque
+          impedit obcaecati totam unde quasi provident adipisci ipsam qui. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus
+          doloremque tempore
+        </p>
+      </div>
+
+      <div>
+        <h2>mohamed elsayed</h2>
+        <p>IOS developer</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+          et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+          explicabo!
+        </p>
+      </div>
+      <div class="black">
+        <h2>mohamed elsayed</h2>
+        <p>IOS developer</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+          et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+          explicabo!
+        </p>
+      </div>
+      <div>
+        <h2>mohamed elsayed</h2>
+        <p>IOS developer</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+          et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+          explicabo!
+        </p>
+      </div>
+      <div>
+        <h2>mohamed elsayed</h2>
+        <p>IOS developer</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+          et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+          explicabo!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
